@@ -3,8 +3,6 @@ import Layout from './components/Layout/Layout';
 import Footer from './components/Footer/Footer';
 import bg1 from './images/bg1.jpg';
 import bg2 from './images/bg2.jpg';
-// console.log(bg1);
-// const bg1 = '../../images/bg1.jpg'
 
 function App() {
   return (
@@ -13,11 +11,21 @@ function App() {
       <Layout
         id={'firstLayout'}
         urlBg={bg1}
-        //  style = {{backgroundImage: "url(" +{bg1} + ")"  }}
-        //  backgroundImage: "url(" + { Background } + ")"
+        title={'Layout_1'}
+        descr={'This is Description Layout_1!'}
       />
-      <Layout id={'SecondLayout'} colorBg="purple" />
-      <Layout id={'ThirdLayout'} urlBg={bg2} />
+      <Layout
+        id={'SecondLayout'}
+        colorBg="purple"
+        title={'Layout_2'}
+        descr={'This is Description Layout_2!'}
+      />
+      <Layout
+        id={'ThirdLayout'}
+        urlBg={bg2}
+        title={'Layout_3'}
+        descr={'This is Description Layout_3!'}
+      />
       <Footer />
     </>
   );
