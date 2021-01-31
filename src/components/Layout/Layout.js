@@ -1,6 +1,6 @@
 import styles from './Layout.module.css';
 
-export default function Layout({ id, title, descr, urlBg, colorBg }) {
+export default function Layout({ id, title, urlBg, colorBg, children }) {
   return (
     <section
       className={styles.root}
@@ -16,9 +16,7 @@ export default function Layout({ id, title, descr, urlBg, colorBg }) {
             <h3>{title}</h3>
             <span className={styles.separator}></span>
           </div>
-          <div className={`${styles.desc} ${styles.full}`}>
-            <p>{descr}</p>
-          </div>
+          <div className={`${styles.desc} ${styles.full}`}>{children}</div>
         </article>
       </div>
     </section>
